@@ -8,12 +8,12 @@
     (1) 連接 SSID: ESP32_LedDisplay，密碼: 1234567890  
     (2) 瀏覽 http://192.168.4.1  
 
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/01.jpg)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/02.jpg)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/03.jpg)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/04.jpg)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/05.jpg)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/06.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/01.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/02.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/03.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/04.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/05.jpg)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/06.jpg)  
 
 ## 材料
 (1) NodeMCU-32S  
@@ -35,12 +35,12 @@
 (7) Time 1.6.1  
 
 ## 原理圖  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/scheme.png)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/scheme.png)  
 
 ## PCB
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/pcb1.png)  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/pcb2.png)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/pcb1.png)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/pcb2.png)  
 
 ## 3D Model  
 * Tinkercad Model: https://www.tinkercad.com/things/0vOz0woKdCv-  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/images/case.png)  
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/case.png)  
