@@ -13,7 +13,7 @@
 #define PRINTS(s)   { Serial.println(F(s)); }
 
 const char* ssid     = "ESP32_LedDisplay";
-const char* password = "1234567890";
+const char* password = "ESP32_LedDisplay";
 WiFiServer server(80);
 Bonezegei_DS3231 rtc(0x68);
 PS2Keyboard keyboard;
@@ -182,8 +182,6 @@ void setup(void){
     P.setZoneEffect(ZONE_UPPER, true, PA_FLIP_LR);
     P.setZoneEffect(ZONE_LOWER, true, PA_FLIP_UD);    
     P.setZoneEffect(ZONE_LOWER, true, PA_FLIP_LR);
-
-
 }
 
 void loop(void){
@@ -223,9 +221,13 @@ void loop(void){
             PAUSE_DISPLAY = false;
         }
     }
+    if(!PAUSE_DISPLAY){  
+        if(!isWorkTime()){ // Work Time: 0830-1730
+            P.displayClear();
+            delay(10);
+            return;
+        }
 
-    if(!PAUSE_DISPLAY){    
-        
         P.displayAnimate();
         if (isAnimationCompleted()){  
             switch (msgIdx){
@@ -288,6 +290,16 @@ void loop(void){
     }
     
     // delay(1);  
+}
+
+bool isWorkTime(){
+  // Work Time: 0830-1730
+  rtc.getTime();
+  int _h = rtc.getHour();
+  int _m = rtc.getMinute();
+  if (_h>=17 && _m>=30) { return false; }  
+  if (_h<=8  && _m<=29) { return false; }
+  return true;
 }
 
 bool isAnimationCompleted(){
