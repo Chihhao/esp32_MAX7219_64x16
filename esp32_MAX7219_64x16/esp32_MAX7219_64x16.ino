@@ -297,8 +297,10 @@ bool isWorkTime(){
   rtc.getTime();
   int _h = rtc.getHour();
   int _m = rtc.getMinute();
-  if (_h>=17 && _m>=30) { return false; }  
-  if (_h<=8  && _m<=29) { return false; }
+  if (_h>=18) { return false; } 
+  if (_h==17 && _m>=31) { return false; }  
+  if (_h<=7) { return false; }
+  if (_h==8  && _m<=29) { return false; }
   return true;
 }
 
