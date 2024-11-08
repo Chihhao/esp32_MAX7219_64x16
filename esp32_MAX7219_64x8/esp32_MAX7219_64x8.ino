@@ -12,8 +12,8 @@
 #define PRINT(s, v) { Serial.print(F(s)); Serial.println(v); }
 #define PRINTS(s)   { Serial.println(F(s)); }
 
-const char* ssid     = "ESP32_LedDisplay_S";
-const char* password = "ESP32_LedDisplay_S";
+const char* ssid     = "LedDisplay_Nory";
+const char* password = "LedDisplay_Nory";
 WiFiServer server(80);
 Bonezegei_DS3231 rtc(0x68);
 PS2Keyboard keyboard;
@@ -75,7 +75,7 @@ const char WebPage[] =
 "function ResetText() {" \
 "  nocache = \"/&nocache=\" + Math.random() * 1000000;" \
 "  var request = new XMLHttpRequest();" \
-"  strLine = \"&MSG1=MK330/&MSG2=B/E Maker Space/&MSG3=Chihhao Lai/&TIME=\" + Date.now();" \
+"  strLine = \"&MSG1=MK350/&MSG2=NoryLee/&MSG3=Happy everyday!/&TIME=\" + Date.now();" \
 "  request.open(\"GET\", strLine + nocache, false);" \
 "  request.send(null);" \
 "}" \
@@ -92,7 +92,7 @@ const char WebPage[] =
 "</head>" \
 
 "<body>" \
-"<p><b>Text Setting</b></p>" \
+"<p><b>LED Matrix Text Setting</b></p>" \
 
 "<form id=\"txt_form\" name=\"frmText\">" \
 "<label>1: <input type=\"text\" name=\"Message1\" maxlength=\"100\" value=\"__MSG1__\" ></label><br><br>" \
@@ -179,14 +179,14 @@ void setup(void){
     server.begin();
       
     P.begin(2);
-    // P.setZone(ZONE_LEFT, 5, 7);
-    // P.setZone(ZONE_RIGHT, 0, 4);
-    P.setZone(ZONE_LEFT, 0, 2);
-    P.setZone(ZONE_RIGHT, 3, 7);
-    P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_UD);
-    P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_LR);
-    P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_UD);
-    P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_LR);
+    P.setZone(ZONE_LEFT, 5, 7);
+    P.setZone(ZONE_RIGHT, 0, 4);
+//    P.setZone(ZONE_LEFT, 0, 2);
+//    P.setZone(ZONE_RIGHT, 3, 7);
+//    P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_UD);
+//    P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_LR);
+//    P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_UD);
+//    P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_LR);
     P.setCharSpacing(1);
     P.setFont(ZONE_LEFT, numeric7Seg);
     P.setFont(ZONE_RIGHT, NULL);
@@ -232,14 +232,14 @@ void loop(void){
             return;
         }
 
-//        P.setZone(ZONE_LEFT, 5, 7);
-//        P.setZone(ZONE_RIGHT, 0, 4);
-        P.setZone(ZONE_LEFT, 0, 2);
-        P.setZone(ZONE_RIGHT, 3, 7);
-        P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_UD);
-        P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_LR);
-        P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_UD);
-        P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_LR);
+        P.setZone(ZONE_LEFT, 5, 7);
+        P.setZone(ZONE_RIGHT, 0, 4);
+//        P.setZone(ZONE_LEFT, 0, 2);
+//        P.setZone(ZONE_RIGHT, 3, 7);
+//        P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_UD);
+//        P.setZoneEffect(ZONE_LEFT, true, PA_FLIP_LR);
+//        P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_UD);
+//        P.setZoneEffect(ZONE_RIGHT, true, PA_FLIP_LR);
         P.setCharSpacing(1);
         P.setFont(ZONE_LEFT, numeric7Seg);
         P.setFont(ZONE_RIGHT, NULL);
@@ -260,9 +260,15 @@ void loop(void){
                 P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_CENTER, scroll_speed, 5000, PA_OPENING, PA_CLOSING);
                 break;
             case 1:  
+                scroll_speed = 80;
+                // P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_LEFT, scroll_speed, 0, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
+                P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_CENTER, scroll_speed, 5000, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+                break;
             case 2:    
                 scroll_speed = 80;
-                P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_LEFT, scroll_speed, 0, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
+                // P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_LEFT, scroll_speed, 0, PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
+                P.displayZoneText(ZONE_RIGHT, msg[msgIdx], PA_CENTER, scroll_speed, 0, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+                
                 break; 
             }
 
