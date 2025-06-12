@@ -8,12 +8,16 @@
     (1) 連接 SSID: ESP32_LedDisplay，密碼: 1234567890  
     (2) 瀏覽 http://192.168.4.1  
 
+### 寬版(64*16)
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/01.jpg)  
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/02.jpg)  
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/03.jpg)  
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/04.jpg)  
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/05.jpg)  
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/06.jpg)  
+
+### 窄版(64*8)
+![image](https://chihhao.github.io/Portfolio/images_arduino_projects/LedMatrix/7.jpg)
 
 ## 材料
 (1) NodeMCU-32S  
@@ -42,5 +46,6 @@
 ![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/pcb2.png)  
 
 ## 3D Model  
-* Tinkercad Model: https://www.tinkercad.com/things/0vOz0woKdCv-  
-![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/case.png)  
+* [寬版(64*16)] Tinkercad Model: https://www.tinkercad.com/things/0vOz0woKdCv-
+* [窄版(64*8)] Tinkercad Model: https://www.tinkercad.com/things/j6S2HNCI5wD-
+![image](https://github.com/Chihhao/esp32_MAX7219_64x16/blob/main/Images/case.png)
