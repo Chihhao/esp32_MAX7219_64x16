@@ -26,9 +26,9 @@
 (4) Reset Button  
 (5) PS/2 母座  
 (6) PCB (JLCPCB)  
-(7) 3D 列印外殼 ([抗靜電PLA](https://mastech3d.shopstore.tw/item/MPLAE5?srsltid=AfmBOordnhgKTl34iQG4GHte7n62okU-jecyvpEcQZp8lnUj-52Lklmb))
+(7) 3D 列印外殼 ([抗靜電PLA](https://mastech3d.shopstore.tw/item/MPLAE5?srsltid=AfmBOordnhgKTl34iQG4GHte7n62okU-jecyvpEcQZp8lnUj-52Lklmb))  
 (8) 強力磁鐵 (直徑 18.2mm / 厚 2mm)  
-(9) 深色透明壓克力 (雷射切割)
+(9) 深色透明壓克力 (雷射切割)  
 
 ## Arduino Library Version  
 (1) IDE: Arduino 1.8.19  
