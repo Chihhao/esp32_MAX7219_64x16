@@ -8,14 +8,14 @@
 ## 專案展示 (Gallery)
 
 ### 寬版 (64x16)
-![Big Demo](../Images/demo-big.gif)
-![Big Clock](../Images/big-clock.png)
-![Big Backside](../Images/big-backside.png)
-![Big Inside](../Images/big-inside.png)
+![Big Demo](Images/demo-big.gif)
+![Big Clock](Images/big-clock.png)
+![Big Backside](Images/big-backside.png)
+![Big Inside](Images/big-inside.png)
 
 ### 窄版 (64x8)
-![Big Demo](../Images/demo-small.gif)
-![Barcode Reader](../Images/barcode-reader.png)
+![Big Demo](Images/demo-small.gif)
+![Barcode Reader](Images/barcode-reader.png)
 
 ---
 
@@ -60,13 +60,13 @@
     *   64x8 版本需 8 片
 3.  **RTC 時鐘模組**: DS3231
 4.  **輸入裝置**: PS2 介面條碼掃描器 (或 PS2 鍵盤) + PS/2 母座
-    ![PS2 Port](../Images/ps2-port.png)
+    ![PS2 Port](Images/ps2-port.png)
 5.  **電源供應**:
     *   **64x16 版本**: 建議使用 **5V 4A** (至少 3A)，以確保全亮時系統穩定。
     *   **64x8 版本**: 建議使用 **5V 2A**。
 6.  **其他**:
     *   Reset Button
-        ![Reset Button](../Images/reset-button.png)
+        ![Reset Button](Images/reset-button.png)
     *   PCB (可參考下方 Gerber 檔)
     *   3D 列印外殼
     *   強力磁鐵 (直徑 18.2mm / 厚 2mm)
@@ -85,14 +85,14 @@
 | | SCL | 22 | I2C SCL (Default) |
 
 ### 原理圖 (Schematic)
-![Schematic](../Images/scheme.png)
+![Schematic](Images/scheme.png)
 
 ### PCB 設計
-![Layout Preview](../Images/layout_preview.png)
-![Module Preview](../Images/module_preview.png)
+![Layout Preview](Images/layout_preview.png)
+![Module Preview](Images/module_preview.png)
 
 ### 3D 外殼模型
-![Case](../Images/case.png)
+![Case](Images/case.png)
 * 寬版(64x16) Tinkercad Model: https://www.tinkercad.com/things/0vOz0woKdCv-
 * 窄版(64x8) Tinkercad Model: https://www.tinkercad.com/things/j6S2HNCI5wD-
 
