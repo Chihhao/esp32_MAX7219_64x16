@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name "ESP32-DEVKITC")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/ESP32-DEVKITC.kicad_sym")(options "")(descr ""))
-  (lib (name "SRD-05VDC-SL-C")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/SRD-05VDC-SL-C.kicad_sym")(options "")(descr ""))
-  (lib (name "yaaj_dcdc_stepdown_lm2596")(type "Legacy")(uri "${KIPRJMOD}/Library.pretty/yaaj_dcdc_stepdown_lm2596.lib")(options "")(descr ""))
-)
